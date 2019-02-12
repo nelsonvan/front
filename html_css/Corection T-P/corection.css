@@ -1,0 +1,40 @@
+.container-fluid{
+    height: 100vh;
+    background: black;
+}
+
+.container{
+    background: white;
+    height: 100vh;
+}
+
+#header{
+    background: mistyrose;
+    height: 15vh;
+    text-align: center;
+}
+
+#nav{
+    height: 5vh;
+    background:  rgb(0, 0, 0);
+}
+
+#carousel{
+    height: 55vh;
+    background: bisque;
+}
+
+#contenu{
+    height: 55vh;
+    background: bisque;
+}
+
+#G{
+    background: white;
+    height: 55vh;
+}
+
+#D{
+    background: grey;
+    height: 55vh;
+}

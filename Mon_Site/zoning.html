@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- Permet de définir le language utilisé -->
+<html lang="fr">
+<!-- Permet de definir la langue de la page -->
+
+<head>
+    <!-- Tete du document non visible sur le site -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zoning</title>
+    <!-- Titre du site apparaissant sur l'onglet -->
+    <meta name="description" content="Ma premiere page en html css">
+    <!-- Description sous le titre dans la recherche Google, les moteurs de recherche s'en servent un peu comme des mots clefs pour les rechercher -->
+    <link rel="stylesheet" href="Css/index.css">
+    <!-- Relie le fichier html a mon fichier css(Cascading style sheets) -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script" rel="stylesheet">
+    <!-- Liens pour les polices via Google font -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <!-- Lien pour le "font-awesome récupere la font sur le site  dans GET STARTED" -->
+
+</head>
+
+<body>
+    <!-- Corps du document -->
+    <header>
+        <!-- Zone du haut exp: banniere, logo, slogan... -->
+        <div id="logo">
+            <a href="index.html" target="_blank"><img src="../Mon_Site/Img/logo.png" alt="logo htmlcss"></a>
+        </div>
+        <div id="slogan">
+            <h1>Mon premier site en html css</h1>
+            <!-- H1 titre de premier rang, un seul par page html -->
+        </div>
+        <div id="rs">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="clear">
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Structure</a>
+        <a href="texte.html">Textes</a>
+        <a href="selecteur.html">Selecteurs</a>
+        <a href="image.html">Images</a>
+        <a href="position.html">Positions</a>
+        <a href="zoning.html" class="activ">Zoning</a>
+        <a href="liste.html">Listes</a>
+        <a href="lien_menu.html">Liens & menus</a>
+        <a href="tableau.html">Tableaux</a>
+        <a href="formulaire.html">Formulaires</a>
+        <a href="multimedia.html">Multimedias</a>
+        <a href="animation.html">Animations</a>
+        <a href="explication_flexbox.html">Flexbox</a>
+    </nav>
+    <main>
+        <!-- main contenu principal de la page -->
+        <h2>
+            Zoning
+        </h2>
+        <section>
+            <h3>Zoning 1</h3>
+            <div id="zoning1">
+                <div class="header">
+                    <p>Zone du haut</p>
+                </div>
+                <aside>
+                    <p>zone de gauche</p>
+                </aside>
+                <section>
+                    <p>zone de droite</p>
+                </section>
+                <div class="clear"></div>
+            </div>
+        </section>
+        <!-- zoning 2 -->
+        <section>
+            <h3>Zoning 2</h3>
+            <section id="zoning2sect">
+                <header id="zoning2hd">
+                    <p>Zone du haut<br>HEADER</p>
+                </header>  
+                <aside id="z2aside1">
+                    <p>Zone de gauche<br>ASIDE</p>
+                </aside>
+                <div class="zoning2">
+                    <p>Zone du milieu <br>MIDDLE</p>
+                </div>
+                <aside id="z2aside2">
+                    <p>Zone de gauche<br>ASIDE</p>
+                </aside>
+                <div class="clear"></div>
+            </section>
+        </section>
+        <!-- zoning 3 -->
+        <section>
+            <h3>Zoning 3</h3>
+            <section id="contzoning3">
+                <div id="z3div1">
+                    <p>Gauche<br>SECTION</p>
+                </div>
+                <div id="z3div2">
+                    <p>Droite<br>SECTION</p>
+                </div>
+                <div class="clear"></div>
+                <footer id="z3footer">
+                    <p>Bas<br>FOOTER</p>
+                </footer>
+            </section>
+        </section>
+        <!-- zoning 4 -->
+        <section>
+            <h3>Zoning 4</h3>
+            <section id="contzoning4">
+                <header class="z4header">
+                    <p>HEADER</p>
+                </header>
+                <nav id="z4nav">
+                    <p>NAV</p>
+                </nav>
+                <section id="z4milieu">
+                    <div class="z4milieu">
+                        <p>SECTION</p>
+                    </div>
+                </section>
+                <div class="clear"></div>
+                <footer id="z4footer">
+                    <p>FOOTER</p>
+                </footer> 
+                <div class="clear"></div>
+            </section>
+        </section>
+        <!-- zoning 5 -->
+        <section>
+            <h3>Zoning 5</h3>
+            <div id="contzoning5">
+                <header id="z5header">
+                    <p>HEADER</p>
+                </header>
+                <nav id="z5nav">
+                    <p>NAV</p>
+                </nav>
+                <section id="z5section">
+                    <div class="z5section">
+                        <div id="zone1">ZONE 1</div>
+                        <div id="zone2">ZONE 2</div>
+                        <div id="zone3">ZONE 3</div>
+                        <div id="zone4">ZONE 4</div>
+                    </div>
+                </section>
+                <footer id="z5footer">
+                    <p>FOOTER</p>
+                </footer>
+            </div>
+        </section>
+        <!-- Zoning 6 -->
+        <!-- J'ai fais ce zoning 6 en me servant du flux naturel et du float, sans avoir besoin de class clear, si cela n'avait pas marché, j'aurais mis une class clear -->
+        <section>
+            <h3>Zoning 6</h3>
+            <div id="contzoning6">
+                <section id="z6header">
+                    <div id="z6hd_1">Haut1</div>
+                    <div id="z6hd_2">Haut2</div>
+                    <div id="z6hd_3">Haut3</div>
+                </section>
+                <section id="z6nav">
+                    Menu
+                </section>
+                <section id="z6milieu">
+                    <aside id="z6aside">Zone de gauche</aside>
+                    <div id="z6A">A</div>
+                    <div id="z6B">B</div>
+                    <div id="z6slide"><!-- images slider -->
+                    <!-- exo supplementaire, integrer un slider avec du JS -->
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                        <img class="mySlides" src="../Mon_Site/Img/slide1.jpg" style="width:100%">
+                        <img class="mySlides" src="../Mon_Site/Img/slide2.jpg" style="width:100%">
+                        <img class="mySlides" src="../Mon_Site/Img/slide3.jpg" style="width:100%">
+                        <img class="mySlides" src="../Mon_Site/Img/slide4.jpg" style="width:100%">
+                    <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
+
+                        function plusDivs(n) {
+                            showDivs(slideIndex += n);
+                        }
+
+                        function showDivs(n) {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            if (n > x.length) { slideIndex = 1 }
+                            if (n < 1) { slideIndex = x.length }
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            x[slideIndex - 1].style.display = "block";
+                        }
+                    </script>
+                    <!-- fin integration slider JS -->
+                    </div>
+                    <div id="z6C">C</div>
+                    <div id="z6D">D</div>
+                    <div id="z6E">E</div>
+                    <div id="z6F">F</div>
+                </section>
+                <footer id="z6footer">Footer</footer>
+            </div>
+        </section>
+    </main>
+    <section>
+        <a href="#logo"><button type="button"><i class="fas fa-arrow-alt-circle-up" aria-hidden="true"></i></button></a>
+    </section>
+    <footer>
+        <!-- Footer: zone du bas, ex: les liens administratifs, mentions légales, plan du site etc... -->
+    </footer>
+    <script type="text/javascript" src="../Mon_Site/js/"></script>
+</body>
+
+</html>

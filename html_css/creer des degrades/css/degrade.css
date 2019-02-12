@@ -1,0 +1,11 @@
+/*On commence toujours par préciser les versions préfixées
+*d'une propriété, pour finir par la version non préfixée
+*Cela permet a chaque version de chaque navigayeur de
+*"pioche" la bonne version pour lui.*/
+body{
+    background: -webkit-linear-gradient(left, red, orange, blue); 
+    background: -o-linear-gradient(right, red, orange, blue);
+    background: -moz-linear-gradient(right, red, orange, blue); 
+    background: linear-gradient(to right, red, orange, blue); 
+
+}

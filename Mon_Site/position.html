@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- Permet de définir le language utilisé -->
+<html lang="fr">
+<!-- Permet de definir la langue de la page -->
+
+<head>
+    <!-- Tete du document non visible sur le site -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Textes</title>
+    <!-- Titre du site apparaissant sur l'onglet -->
+    <meta name="description" content="Ma premiere page en html css">
+    <!-- Description sous le titre dans la recherche Google, les moteurs de recherche s'en servent un peu comme des mots clefs pour les rechercher -->
+    <link rel="stylesheet" href="Css/index.css">
+    <!-- Relie le fichier html a mon fichier css(Cascading style sheets) -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script" rel="stylesheet">
+    <!-- Liens pour les polices via Google font -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <!-- Lien pour le "font-awesome récupere la font sur le site  dans GET STARTED" -->
+
+</head>
+
+<body>
+    <!-- Corps du document -->
+    <header>
+        <!-- Zone du haut exp: banniere, logo, slogan... -->
+        <div id="logo">
+            <a href="index.html" target="_blank"><img src="../Mon_Site/Img/logo.png" alt="logo htmlcss"></a>
+        </div>
+        <div id="slogan">
+            <h1>Mon premier site en html css</h1>
+            <!-- H1 titre de premier rang, un seul par page html -->
+        </div>
+        <div id="rs">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="clear">
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Structure</a>
+        <a href="texte.html">Textes</a>
+        <a href="selecteur.html">Selecteurs</a>
+        <a href="image.html">Images</a>
+        <a href="position.html" class="activ">Positions</a>
+        <a href="zoning.html">Zoning</a>
+        <a href="liste.html">Listes</a>
+        <a href="lien_menu.html">Liens & menus</a>
+        <a href="tableau.html">Tableaux</a>
+        <a href="formulaire.html">Formulaires</a>
+        <a href="multimedia.html">Multimedias</a>
+        <a href="animation.html">Animations</a>
+        <a href="explication_flexbox.html">Flexbox</a>
+    </nav>
+    <main>
+        <!-- main contenu principal de la page -->
+        <h2>
+            Les Positions
+        </h2>
+        <section>
+            <h3>Position absolue</h3>
+            <h4>Centrer un élément de type block</h4>
+            <div class="absolue">
+                Test
+            </div>
+        </section>
+
+        <section>
+            <h3>Position relative</h3>
+            <div class="relative">
+                <div></div>
+            </div>
+        </section>
+        <!-- bouton retour vers le haut -->
+        <section>
+            <h3>Position fixed</h3>
+            <p>Bouton retour vers le haut</p>
+            <button type="button"><i class="fas fa-arrow-alt-circle-up" aria-hidden="true"></i></button>
+            
+
+        </section>
+        <!-- Les pourcentages -->
+            <h3>Les Pourcentages</h3>
+        <section id="pourcentage">
+            <div id="p25">25%</div>
+            <div id="p50">50%</div>
+            <div id="p100">100%</div>
+        </section>
+        <!-- le float -->
+        <section id="float">
+            <h3>L'attribut Float</h3>
+            <div class="floatbox">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="clear"></div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+                <div class="box">7</div>
+                <div class="clear"></div>
+                <div class="box">8</div>
+                <div class="box">9</div>
+                <div class="clear"></div>
+                <div class="box">10</div>
+                <div class="clear"></div>
+        </section>
+        <!-- exercicesur le float -->
+        <section id=float2>
+            <h3>Exercice sur le float</h3>
+            <section class="exofloat">
+                <div id="box1"></div>
+                <div id="box2"></div>
+                <div id="box3"></div>
+                <div id="box4"></div>
+                <div class="clear"></div>
+            </section>
+        </section>
+        <!-- Flexbox -->
+        <section id="sectflex">
+            <h3>Flexbox</h3>
+                <section>
+                    <div id="flbox1">1</div>
+                    <div id="flbox2">2</div>
+                    <div id="flbox3">3</div>
+                    <div id="flbox4">4</div>
+                </section>
+        </section>
+    </main>
+    <section>
+        <a href="#logo"><button type="button"><i class="fas fa-arrow-alt-circle-up" aria-hidden="true"></i></button></a>
+    </section>
+    <footer>
+        <!-- Footer: zone du bas, ex: les liens administratifs, mentions légales, plan du site etc... -->
+    </footer>
+</body>
+
+</html>

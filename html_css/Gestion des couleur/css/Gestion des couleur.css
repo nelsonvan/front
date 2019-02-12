@@ -1,0 +1,13 @@
+body{
+    background-color: purple;
+}
+
+/* Notre titre h1 aura un fond bleu*/
+h1{
+    background-color: #069;
+}
+
+/*Notre div aura un fond jaune, légérment transparent*/
+div{
+    background-color: RGBa(200, 200, 000, 0.5);
+}

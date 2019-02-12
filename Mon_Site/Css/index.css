@@ -1,0 +1,851 @@
+*{
+    box-sizing: border-box;
+    /* ça bloque l'élément, le recentre et ça fait une marge */
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.clear{
+    clear: both;
+}
+h1{
+    font-size: 45px;/* La taille de la police */
+    color: white;/* couleuir de la police */
+    margin-top: 50px;/* Definit l'espace vertical pour la marge appliquée en haut de l'element */
+    font-family: 'amatic SC', cursive; /* La famille de la police, le nom */
+    text-align: center;/* alignement du texte dans la page */
+    font-weight: 400;/* largeur de la police */
+}
+h2{
+    font-size: 50px;
+    color: crimson;
+    padding: 20px;/* marge interieur */
+    font-weight:  bold;/* epaisseur en gras */
+    font-family:'amatic SC', cursive;
+}
+h3{
+    font-size: 22px;
+    color: blueviolet;
+    padding: 15px;
+}
+h4{
+    font-size: 20px;
+    color: blueviolet;
+    text-align: center;
+    margin-top: 30px;
+}
+h5{
+    font-size: 90px;
+    color: purple;
+    padding: 20px;
+    font-weight: bold;
+    font-family: 'amatic SC', cursive;
+    text-align: center;
+}
+blockquote{/* Indique que le texte contenu dans l'element est une citation longue */
+    font-style: italic;
+    font-size: 120%;
+}
+strong{/* indique que le texte a une importance particuliere ou un certain serieux voir un caractere urgent*/
+    font-weight: bold;
+}
+main{
+    background: #ffbc65;
+    margin: 0;/* definit la taille des marges sur les 4 cotés de l'element */
+    width: 1000px;/* largeur */
+    margin: 0 auto;
+}
+aside{
+    height: 300px;/* hauteur */
+}
+section{
+    margin-top: 50px;
+    padding: 20px;
+}
+footer{
+    background: #db5a1e;/* couleur de fond */
+    height: 30px;
+}
+/* ******* Header********** */
+header{
+    background-color: #4d6792;
+    height: 190px;
+}
+#logo{
+    width: 25%;
+    float:left;
+    /* indique qu'un élément doit etre retiré du flux normal et doit être  placé sur le côté droit ou sur le côté gauche de son conteneur */
+    text-align: center;
+    padding: 15px;
+}
+#slogan{
+    width: 50%;
+    float: left;
+}
+#rs{
+    width: 25%;
+    float: left;
+    padding: 20px;
+}
+#rs a{
+    font-size: 30px;
+    color: white;
+    display: block;
+    /* change leur type inline en block pour les mettre les uns a coté des autres */
+    text-align: right;
+    padding: 15px 30px 0 0;
+    text-decoration: none;
+    /* utilisé pour decorer le texte en ajoutant une ligne pouvant etre positionnée sous, sur ou a travers le texte, ici "none" signifie rien du tout */
+}
+#rs a:hover{
+    /* "hover" permet de specifier l'apparence d'un élément au moment ou l'utilisateur le survol de la souris */
+    font-size: 60px;
+    transition: 2s;
+}
+/* ---------Fin du Header------------- */
+/* ***********NAV******************* */
+
+nav{
+    background: #573697;
+    border-bottom:  4px solid slategray;
+    /* proprieté qui definit la bordure du coté bas d'un élément */
+    text-align: center;
+    padding: 17px;
+}
+nav a{
+    font-family: 'amatic SC', cursive;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 50px;
+    border: 1px solid pink;
+    /* permet de definir les proprietés liées a la bordure */
+    padding: 6px 9px;
+    border-radius: 7px;
+    /* permet de definir des cotés arrondis pour la bordure d'un élément */
+    margin: 0px 8px;
+}
+nav a:hover{
+    background: pink;
+    transition: 2s;
+}
+.activ{
+    /* pour appeller une class en css on utilise "."*/
+    background: pink;
+}
+/* ---------------Fin de la nav---------------------- */
+/* ---------------Debut page texte------------------- */
+.roboto p{
+    font-family: 'roboto condensed', sans-serif;
+}
+.select p{
+    color: red; /*tous le p à l'intérieur de la balise "section" */
+}
+.select p:first-of-type{
+    color: purple;
+}
+.select p:last-of-type{
+    color: purple;
+}
+.select p:nth-last-of-type(5), .select p:nth-last-of-type(6){
+    color: black;
+}
+.select div:not(.zoneb){/* Toutes les div du parent select seront en gras not(.zoneb) donc sauf la zoneb */
+    font-weight: bold;
+}
+.select .zonea{
+    color: red;
+}
+.select .zoneb{
+    color: #963;
+}
+.select .zoneb.couleurbleu{
+    color: blue;
+}
+.select #zonec{
+    color: #98f32f;
+}
+.select #zoned span{
+/* Le span prendra en compte aussi .couleurbleu sauf pour la couleur car on l'aura deja definie */
+color: #32ff32;
+}
+/* ---------------Fin de la nav---------------------- */
+/* ---------------Debut page image------------------- */
+.imgfond{
+    background: black url(../Img/FLRATTOS_autotours-toscane-italie-tui.jpg)no-repeat;
+    background-size: cover;
+}
+.imgfond p{
+    width: 75%;
+    background: rgba(255, 255, 255, 0.425);
+    margin: 100px auto 200px auto;
+    padding: 20px;
+    font-size: 120%;
+    border-radius: 10px;
+}
+/* .img2{
+    background: black url(../Img/b482d6711ca89ea3fe04d255f7d2ee4a.jpg)no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+    height: 400px;
+    margin: auto;
+    box-shadow: 4px 4px 15px rgb(0, 0, 0);
+}
+.sectimg2{
+    width: 25%;
+    height: 600px;
+    margin: auto;
+}
+#h3img2{
+    margin: 20px 20px; */
+/* } */
+/* -----------2eme image-----------  */
+img{
+    margin: auto;
+    width: 250px;
+    display: block;
+    border: 2px solid black;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+/* -----------rotation------------------ */
+.rotationImg{  /*image de type inline-block, elle comporte des marges par défaut*/
+     /*pour supprimer cette marge, ouvrir commentaire après première photo et le fermer
+     avant deuxième photo ou enlever les espaces dans le HTML*/
+    text-align: center;
+}    
+.image{
+    margin: 20px;
+    border: 5px solid #eee;
+    box-shadow:12px 12px 6px 6px rgba(0,0,0,0.5);
+    transition: 1s;
+}
+.image:hover{
+    transform: rotate(7deg);
+}
+.rotation360:hover{
+    transform: rotate(-360deg);
+}
+
+/* ----------Listes-------------- */
+.liste1{/* Je cible les ul qui a pour class liste 1 */
+    list-style: none;/* enleveles puces dans une piste */
+}
+.liste1 li{
+    display: inline-block;
+    margin: 15px;
+}    
+li i{
+    font-size: 90%;
+    color: tomato;
+}
+.imbriquee, .imbriquee ul{
+    padding-left: 15px;/* marge interieur gauche */
+    margin: 5px;
+    cursor: pointer;
+}
+.asie, .eu{
+    margin-top: 20px;
+    list-style:  none;
+    font-size: 20px;
+}
+.asie ul li:hover{
+    color: tomato;
+    font-size: 30px;
+    transition: 1s;
+}
+.asie span:hover{
+    color: tomato;
+    font-size: 30px;
+    transition: 1s;
+}
+.eu span:hover{
+    color: tomato;
+    font-size: 30px;
+    transition: 1s;
+}
+.eu ul li:hover{
+    color: tomato;
+    font-size: 30px;
+    transition: 1s;
+}
+.asie span, .eu span{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* -------------Tableaux---------------- */
+
+.tableau{
+    margin: 0 auto;
+    width: 80%;
+    border: 4px solid rgb(0, 0, 0);
+    border-collapse: collapse; /*par defaut la bordure contient 2 traits, pour que le trait soit unique on utilise la propriété "collapse" */
+}
+thead, tfoot{ 
+    background-color: rgb(197, 231, 197);
+    border: 2px solid rgb(50, 58, 39);
+}
+th{
+    border: 1px solid black;
+    width: 25%;
+    padding: 4px;
+}
+td{
+    border: 1px solid black;
+    font-size: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+/* ------------Page position-------------- */
+.absolue{
+    margin: 0 auto;
+    width: 500px;
+    height: 200px;
+    background: #3cc;
+    color: white;
+    text-align: center;
+    line-height: 180px;
+    font-size: 50px;
+    font-style: italic;
+}
+/* .absolute{
+    position: absolute;
+    top: 10%;
+    height: 10%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 150px;
+} */
+.relative{
+    background: red;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    bottom: 50px;
+    margin: 0 auto;
+}
+.relative div{
+    position: absolute;
+    bottom: 10%;
+    width: 50px;
+    height: 50px;
+    background: blue;
+}
+button{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 350%;
+    color: slategray;
+}
+button:hover{
+    color: #4d6792;
+    transition: 1s;
+}
+
+/* les pooucentages */
+#pourcentages{
+    width: 100%;
+    text-align: left;
+}    
+#p25{
+    height: 50px;
+    width: 25%;
+    background: #8a0829;
+    color: yellow;
+    padding: 12px;
+    margin: 2px 0px;
+}
+#p50{
+    height: 50px;
+    width: 50%;
+    background: rgb(177, 104, 245);
+    color: yellow;
+    padding: 12px;
+    margin: 2px 0px;
+}
+#p100{
+    height: 50px;
+    width: 100%;
+    background: rgb(84, 138, 255);
+    color: yellow;
+    padding: 12px;
+    margin: 2px 0px;
+}
+/* le float css*/
+#float{
+    width: 100%;
+    height: 800%;
+    margin: 0 auto;
+}
+.floatbox{
+    width: 90%;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    float: left;
+    margin: 10px;
+    box-shadow: 2px 2px black;
+}
+.box:hover{
+    border-radius: 50%;
+    transform: rotate(20deg);
+    transition: 2s;
+    background: gray;
+}
+/* exercice sur le flot css */
+#float2{
+    width: 100%;
+    height: 400px;
+}
+.exofloat{
+    width: 95%;
+    height: 240px;
+    background: #309440;
+    margin: 0 auto;
+    padding: 0;
+}
+#box1{
+    width: 25%;
+    height: 200px;
+    background: #f870d6;
+    float: left;
+    margin-top: 20px;
+}
+#box1:hover{
+    width: 12%;
+    height: 50%;
+    transition: 2s;
+}
+#box2{
+    width: 25%;
+    height: 200px;
+    background: #ff1212;
+    float: left;
+    margin-top: 20px;
+}
+#box2:hover{
+    transform:rotate(-360deg);
+    transition: 2s;
+}
+#box3{
+    width: 25%;
+    height: 200px;
+    background: #5ac572;
+    float: left;
+    margin-top: 20px;
+}
+#box3:hover{
+    border-radius: 20% 5% 2% 30%;
+    background: linear-gradient(#ff382a, #000da1);
+    transition: 2s;
+}
+#box4{
+    width: 25%;
+    height: 200px;
+    background: #94016f;
+    float: left;
+    margin-top: 20px;
+}
+#box4:hover{
+      /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s; 
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite; 
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+/* exercice flexbox */
+#sectflex{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: white;
+}
+#flbox1, #flbox2, #flbox3, #flbox4{
+    width: 200px;;
+    height: 200px;
+    border: 1px solid white;
+    background: #8a0829;
+    display: flex;
+    flex-direction: row;
+}
+/* ------------- Page Zoning------------- */
+/* zoning 1 css */
+#zoning1{
+   margin: 0 auto;
+   width: 800px;
+   border: 2px solid rgb(8, 8, 12);
+}
+#zoning1 .header{
+   height: 80px;
+   background: rgb(35, 62, 77);
+}
+#zoning1  aside{
+   width:  30%;
+   height: 500px;
+   background: rgb(162, 197, 206);
+   float: left;
+}
+#zoning1 section{
+   width: 70%;
+   height: 500px;
+   background:rgb(105, 145, 161) ;
+   margin:0;
+   padding: 0;
+   float: left;
+}
+/* zoning 2 css */
+#zoning2sect{
+    text-align: center;
+    margin: 0 auto;
+    background: transparent;
+    height: 700px;
+    width: 600px;
+    text-shadow: 2px 2px 2px white;
+}
+#zoning2hd{
+    height: 80px; 
+    background: transparent;
+}
+.zoning2{
+    background: #8a0829;
+    height: 620px;
+    width: 60%;
+    float: left;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+#z2aside1{
+    width: 20%;
+    background: #573697;
+    height: 620px;
+    float: left;
+    color: aliceblue;
+}
+#z2aside2{
+    width: 20%;
+    background: #573697;
+    height: 620px;
+    float: right;
+    color: aliceblue;
+}
+/* zoning 3 css */
+#contzoning3{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    height: 700px;
+    width: 600px;
+    text-shadow: 2px 2px 2px black;
+}
+#z3div1{
+    width: 50%;
+    height: 600px;
+    background: rgb(2, 34, 2);
+    float: left;
+    color: white;
+}
+#z3div2{
+    width: 50%;
+    height: 600px;
+    background: rgb(84, 114, 31);
+    float: left;
+    color: white;
+}
+#z3footer{
+    width: 100%;
+    height: 80px;
+    background: rgb(177, 115, 53);
+}
+/*  zoning 4 css */
+#contzoning4{
+    width: 900px;
+    height: 840px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    border: 2px solid black;
+}
+.z4header{
+    width: 100%;
+    height: 100px;
+    background: #405474;
+}
+#z4nav{
+    width: 100%;
+    height: 60px;
+    background: rgb(30, 70, 25);
+    border-bottom: 6px solid #405474;
+}
+#z4milieu{
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    background: #eee;
+}
+.z4milieu{
+    background: url(../Img/ITACTTOS_toscane-paysage-circuits-italie-tui.jpg)no-repeat;
+    width: 98%;
+    height: 98%;
+    margin: 0 auto;
+    background-size: cover;
+    color: #eee;
+}
+#z4footer{
+    background: #8a0829;
+    width: 100%;
+    height: 76px;
+    text-shadow: 2px 2px 2px white;
+}
+/*  zoning 5 css */
+#contzoning5{
+    width: 95%;
+    height: 800px;
+    text-align: center;
+    border: 2px solid black;
+    margin: 0 auto;
+    padding: 0;
+}
+#z5header{
+    height: 12%;
+    width: 100%;
+    margin: 0;
+}
+#z5nav{
+    height: 6%;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 5px solid rgb(114, 42, 13);
+}
+#z5section{
+    height: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background: #eee;
+}
+.z5section{
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+}
+.z5section div{
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+#z5footer{
+    width: 100%;
+    height: 6%;
+}
+#contzoning5, #z5header, #zone2, #zone3, #z5footer{
+    background: rgb(218, 169, 65);
+}  
+#z5nav, #zone1, #zone4{
+    background: rgb(134, 93, 17);
+}   
+
+/* zoning 6 css */
+#contzoning6{
+    width: 100%;
+    height: 840px;
+    background: lightgray;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#z6header{
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}
+#z6hd_1{
+    height: 200px;
+    width: 25%;
+    background: rgb(0, 31, 0); 
+    float: left;
+}
+#z6hd_2{
+    height: 200px;
+    width: 50%;
+    background: rgb(56, 122, 56); 
+    float: left;
+}
+#z6hd_3{
+    height: 200px;
+    width: 25%;
+    background: rgb(0, 31, 0); 
+    float: left;
+}
+#z6nav{
+    width: 100%;
+    height: 70px;
+    background: brown;
+    margin: 0;
+}
+#z6milieu{
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+}
+#z6aside{
+    width: 24%;
+    height: 500px;
+    background: #405474;
+    float: left;
+}
+#z6A{
+    width:38%;
+    height: 170px;
+    background: rgb(90, 195, 255);
+    float: left;
+}
+#z6B{
+    width:38%;
+    height: 170px;
+    background: rgb(82, 139, 87);
+    float: left;
+}
+#z6slide{
+    width: 76%;
+    height: 170px;
+    background: rgb(94, 94, 167);
+    float: left;
+}
+.mySlides{
+    max-width: 100%;
+    max-height: 100%;
+}
+#z6C{
+    width:19%;
+    height: 160px;
+    background: rgb(132, 194, 137);
+    float: left;
+}
+#z6D{
+    width:19%;
+    height: 160px;
+    background: rgb(69, 124, 64);
+    float: left;
+}
+#z6E{
+    width:19%;
+    height: 160px;
+    background: rgb(41, 100, 26);
+    float: left;
+}
+#z6F{
+    width:19%;
+    height: 160px;
+    background: rgb(36, 92, 82);
+ 
+   float: left;
+}
+#z6footer{
+    width: 100%;
+    height: 80px;
+    background: #309440;
+}
+
+
+/* ---------Liens & Menus--------- */
+/**********Page liens et menus**********/
+.ancre{
+  text-align: center;
+  margin: 15px;
+}
+.ancre a{
+  color: white;
+  background: tomato;
+  padding:7px;
+  text-decoration: none;
+  border-radius: 7px;
+  margin: 5px;
+  box-shadow: 0px 1px 24px 0px rgba(46,50,50,0.73);
+}
+.ancre a:hover{
+font-size: 150%;
+transition: 2s;
+}
+.contAncre{
+  border-top: 2px solid #2c3e50;
+  border-bottom: 2px solid #2c3e50;
+}
+#lien a{
+  text-decoration: none;
+  color: lightblue;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 120%;
+}
+#menu nav{
+  background: transparent;
+  border: none;
+}
+#menu ul{
+  list-style: none;
+  text-align: center;
+}
+#menu ul li{
+  display: inline-block;
+}
+#menu nav a{
+  padding: 10px;
+  color: CRIMSON;
+  text-decoration: none;
+  background: white;
+}
+#menu nav a:hover{
+  background: yellow;
+  transition: 1s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
