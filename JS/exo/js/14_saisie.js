@@ -1,13 +1,11 @@
-alert("goo");
-var nb = prompt("saisir un nombre entre 50 et 100");
-if ((nb >= 50) && (nb <= 100))
-if ((nb ))
-[
 
-    document.write("<h3>vous avez saisie le nombre " + nb);
-]
-
-else {
-    alert("nombre non valide");
-  
+ var nombre = 0; // valeur initiale permettant d'entrer dans la boucle 
+ while ((nombre < 50) || (nombre > 100)) {
+ nombre = Number(prompt("entrez un nombre entre 50 et 100 "));
 }
+
+
+
+
+
+
