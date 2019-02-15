@@ -1,0 +1,209 @@
+/* 
+1- Je fait mon zoning
+ */
+.container-fluid{/*Je régle le
+     mon espace de stockage <div></div> */
+    /* background: red; */
+    font-family: Arial, sans-serif;
+    background: url("../img/background.png"); /* pour definir le chemln de l'image je dois partir de mon fichier css pour aller dans le dossier img */
+     height: 121vh;
+     width: 100vw;
+}
+
+nav{ /*je régle la dimension de 
+   menue de ma <nav></nav> */
+    background: #C55394;
+    height: 5vh;
+}
+
+ header {/*je régle la dimension de 
+    mon <head></header>*/
+    /* background: azure; */
+    height: 15vh;
+     background: url("../img/rainbow.png") no-repeat; 
+    background-position-x: center;
+      
+}
+
+.container{ /*je régle la dimension de 
+    mon <main></main>*/
+    background: #fff;
+    height: 87vh;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.unicorn{
+    background: bisque;
+    height: 23vh;
+    padding-top: 1vh;
+
+}
+.unicorn p {
+    margin: 15px;
+    font-size: .8em;
+}
+
+
+.unicorn h4{
+    margin-top: 5ch;
+    
+
+}
+
+
+
+
+footer{ /*je régle la dimension de 
+    mon <footer></footer>*/
+    background: #E577B5;
+    height: 5vh;
+    margin-top: 10vh;
+}
+
+h1{
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    padding: 75px;
+    font-family: italic;
+    color: #C55394;
+}
+
+nav h3{
+    float: left;
+    color: #FFF;
+    font-family: 'Courgette', cursive;
+    margin: 15px;
+
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 15%;
+    float: right;
+    list-style: none;
+    
+}
+
+.clear{
+    clear: both;
+    /* avec la propriété clear
+    j'annule la propriété float et
+    les éléments html reprennent
+    leur comportement normal */
+}
+section p {
+    font-size: 0.7em;
+    text-align: justify;
+    padding: 5px;
+    margin-bottom: 1vh;
+}
+
+.img{
+    float: left;
+    height: 5vh;
+}
+
+.img img{
+    display: inline-block;
+    height: 13vh;
+    margin: 13px;
+    
+}
+
+#map{
+    float: left;
+}
+
+/* <header>
+        <img src="img/raimbow.png"
+        alt="arc-en-ciel>
+
+
+css: header img {
+    height: 21vh;
+    margin: 0 auto;
+    position: relative;
+    left: 30vw;
+}
+
+</header> */
+
+
+    
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.container-fluid{
+    background-image: url("../img/background.png");
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+     
+
+
+.container{
+    background-image: url("../img/background.png");
+    background-size: 25%;
+    font-family: Arial, sans-serif;
+     
+   
+}   
+    
+
+
+
+h1{
+    font-family: Arial, sans-serif;
+    background: #C55394;
+    font-family: 'Courgette', cursive;
+
+
+}*/
+
+
