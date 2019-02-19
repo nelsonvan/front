@@ -2,8 +2,8 @@
 	font-family: Arial, sans-serif;
 
 Police des titres :
-	font-family: 'Courgette', cursive;
 	
+	font-family: 'Courgette', cursive;
 Etoiles dans les titres : 
     FontAwesome 4.6 => fa-star-o
 
