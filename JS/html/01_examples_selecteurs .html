@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+   <meta charset="UTF-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+   <title>cours_JS</title>
+
+   <style>
+
+       a:link{
+
+           color:orange;
+
+           text-decoration: none;
+
+       }
+
+       a:hover{   
+
+           text-decoration: underline;
+
+       }
+
+       a:visited{
+
+           color:teal;
+
+       }
+
+       a:hover, a:focus{
+
+           text-decoration: underline;
+
+           outline: thin solid gold;
+
+       }
+
+     [href^=http]{
+         border-bottom: 3px dotted violet;
+         /* épaisseur de bordure 
+       couleur de bordure| 
+       styles : solid = filet
+                dashed= tirets
+                doltted pointillés*/
+                background-color: silver;
+                background-image: url("images/lien_externe.svg");
+                background-repeat: no-repeat;
+                background-position: right .3rem;
+                 background-size: 1.5rem auto;     
+
+                margin-bottom: 2rem;
+                display: inline-block;
+                
+                /* les margin et padding top et buttom ne
+                fonctionne  pas avec les display: innline
+                si je veux mettre unn padding, et ou une margin sur un lien, il faudra transformer 
+                son display
+                margin-bottom: 2rem; */
+             
+                /* background-position 0 0; par defaut en haut a gauche */
+                /* background-position: 100% 50%; */
+                /*la méme chose en forme d'écriture courte  */
+                background: silver url("images/lien_externe.svg") no-repeat right 5rem;
+                /* couleur de fond | chemin vers l'image | repetition | position */
+               
+            
+
+                 
+
+                
+     }
+       
+    
+
+       a:active{
+
+           color:crimson;
+
+       }
+       div{
+           padding: 1rem;
+       }
+
+       :target{
+
+           background:lightseagreen;
+           border-left:4px silver;
+       }        
+       
+       </style>
+
+       
+</head
+><body>
+    <p></p>
+    <a href="http://www.apple.com">Lien vers Apple</a> 
+    <a href="https://www.ratp.fr/">Lien vers Apple</a> 
+    <a href="https://www.darty.com/">Lien vers Apple</a> 
+                    
+                    
+
+      <nav>
+
+          <a href="#chap1">Chapitre 1</a>
+
+          <a href="#chap2">Chapitre 2</a>
+
+          <a href="#chap3">Chapitre 3</a>
+
+      </nav>
+
+      <section>
+
+       <a href="#">Faux lien</a>
+
+       <div id=chap1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quia consectetur, dicta culpa nesciunt natus officia, id quos autem molestiae laboriosam et repellat explicabo beatae, veritatis cum nobis harum voluptatibus.</div>
+
+       <div id=chap2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quia consectetur, dicta culpa nesciunt
+
+       natus officia, id quos autem molestiae laboriosam et repellat explicabo beatae, veritatis cum nobis harum
+
+       voluptatibus.</div>
+
+       <div id=chap3>Lorem ipsum dolor sit amet consectetur adipisicing elit.Accusamus quia consectetur, dicta culpa nesciunt
+
+       natus officia, id quos autem molestiae laboriosam et repellat explicabo beatae, veritatis cum nobis harum
+
+       voluptatibus.</div>        </section></body></html>

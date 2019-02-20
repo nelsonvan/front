@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+     html{
+         /* modifier la taille de type pour avoir une taille de 10px */
+         font-size: 62.5%; /* = 10px  */
+     }
+
+     body{
+         margin: 0;
+         font-size: 1.4rem;   /*14px*/
+         font-family: arial, Arial, Helvetica, sans-serif
+     }   
+     h1{
+         border: 2px crimson solid;
+         margin-bottom: 0;
+         padding: 1rem;/* 10 px*/
+         width: 300px;
+
+         /*la taille caculée de la boite du h1 : 
+         border-left 2px + padding-left 10px + width 300 px ° padding-right
+         10px + border-right 2px = TOTAL 324 px */
+         
+     }  
+     p{
+         border: 2px gold solid;
+         font-size: 1.3rem;
+         margin-top: 0;
+         width: 300px;
+        
+        
+         
+     } 
+
+     article{
+         border: 2px silver solid;
+         min-width: 160px;
+         max-width: 600px;
+
+         /* pour éviter que cette article soit plus petit on utilise */
+
+         padding: 1rem;
+         box-sizing: border-box;
+         width: 50%;
+     /* largeur calcul" : 324px*/  
+      /*avec le  box-sizing: border-box; , la largeur calculée sera de 300 px
+         qulque soient  les border et les padding 
+         pour centrer l'article dans body*/  
+         margin:0 auto;
+         
+     }
+
+     h2{
+         background: coral;
+         width: 57.9710%;  /* a converire en en % 
+         cible 160 px divisé par context  */
+     }
+
+    </style>
+</head>
+<body>
+   <!-- listes de balise display, block;  
+   body, div, p, h1, h3, h4, h5, h6, ul, ol, li, dd
+   div,  section, article , aside, nav, header, footer 
+   les balises block sont des boites qui font 100% de largeur par défaut
+   et qui sont affichées les unes sur les autres verticalment.
+   l'espace vertical qui separe les boites ce'est de la marge.
+
+   listes des balises inline : a, strong , span, adress
+
+   listes des balises inlinne-block : img, audio, video, canvas, imput, selection
+
+   liste de balise display:table; : table 
+   liste de balise display:table-row : tr 
+   liste de balise display:table-cell : td  -->
+<h1>HTML</h1>
+<p><!DOCTYPE html>
+
+    <html lang="en">
+    
+    <head>
+    
+       <meta charset="UTF-8">
+    
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+       <title>Document</title>
+    
+       <style>
+    
+           p{
+    
+           background-color: lightcoral
+    
+           }
+    
+       strong{
+    
+           background-color:darkcyan;
+    
+           padding: 1rem;    }
+    
+       em{
+    
+           background-color:lightseagreen;
+    
+           padding: 1rem;
+    
+           display: inline-block;
+    
+       }
+    
+       ul{
+    
+           border: 2px solid slateblue;
+    
+           list-style: none;
+    
+           padding-left: 0;    }
+    
+       li{
+    
+           border: 2px solid rgb(76, 68, 131);
+    
+           display: inline-block;
+    
+           padding: 1rem;
+    
+       }    section{
+    
+           border: 2px royalblue solid;
+    
+           width: 60%;
+    
+       }
+    
+       section div{
+    
+           border: 2px turquoise solid;
+    
+           width: 50%;
+    
+           box-sizing: border-box;
+    
+           padding:1rem;
+    
+           float: left;
+    
+            /* Avec le float les div sortent de la section (leur parents) , elle ne les contient plus */
+    
+       }
+    
+       .clearfix:after{
+    
+           content: '';
+    
+           display: table;
+    
+           clear: both;
+    
+       }
+    
+       </style></head>
+    
+    <body>
+    
+       <p> Lorem ipsum dolor sit amet <strong> DU GRAS ! Y'a QUE SA...</strong> consectetur adipisicing elit. Consequuntur atque, cum tempora incidunt porro esse, est corrupti possimus odit explicabo assumenda. Alias ratione corporis sapiente recusandae, obcaecati praesentium consequuntur unde! </p>
+    
+       <p>Lorem ipsum dolor <em>DE LITALIC</em> sit amet consectetur, adipisicing elit. Sint qui modi aliquid, nihil rem quod similique, voluptatum accusamus consequatur unde animi ea odio iure ipsa sit. Tempora repellendus esse vitae.</p>
+    
+       <p>Lorem ipsum dolor sit amet consectetur <strong>adipisicing elit. Sequi amet debitis </strong> quaerat enim labore, eaque architecto laborum aperiam possimus ex! Earum ipsa nemo, dolor unde repellendus laboriosam. Non, molestias quisquam!</p>
+    
+       <ul>
+    
+           <li>Pomme</li>
+    
+           <li>Pêche</li>
+    
+           <li>Poire</li>
+    
+       </ul>    <section class="clearfix">
+    
+           <div>Un</div>
+    
+           <div>Deux</div>
+    
+           <div>Trois</div>
+    
+       </section></body>
+    
+    </html>
+
+<h1>CSS</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quia consectetur, dicta culpa nesciunt natus officia, id quos autem molestiae laboriosam et repellat explicabo beatae, veritatis cum nobis harum voluptatibus.</p>
+
+<article><h2>Histoire du web</h2>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quia consectetur, dicta culpa nesciunt natus officia, id quos autem molestiae laboriosam et repellat explicabo beatae, 
+    
+
+</article>
+</body>
+</html>

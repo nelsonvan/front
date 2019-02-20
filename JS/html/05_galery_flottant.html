@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            .container{
+                width: 80%;
+                border: 2px solid blue;
+                margin: 0 auto;
+            }
+            .flt_l{
+                float: left;
+            }
+            .clear{
+                clear: both;
+                display: table;
+
+            }
+    
+            .clearfix:after{
+                content: 'FAUX FOOTER';
+                display: table;
+                clear: both;
+                
+                
+            }
+            *{
+                box-sizing: border-box;
+            }
+
+           .container figure{
+               border: 2px orange solid;
+               width: 25%;
+               margin: 0 auto;
+               float: left;
+
+           }
+
+           figure img{
+               max-width: 100%;
+           }
+    
+        </style>
+</head>
+<body>
+   <div class="container clearfix">
+       <figure class="flt_l">
+           <img src="images/montagne.jpg" alt "">
+       </figure>
+       <figure>
+            <img src="images/montagne.jpg" alt "">
+        </figure class="flt_l">
+        <figure>
+                <img src="images/montagne.jpg" alt "">
+        </figure class="flt_l">
+        <figure>
+                <img src="images/montagne.jpg" alt "">
+        </figure class="flt_l">
+        <figure>
+                <img src="images/montagne.jpg" alt "">
+        </figure >
+        <figure class="flt_l">
+                <img src="images/montagne.jpg" alt "">
+        </figure>
+        <figure class="flt_l">
+                <img src="images/montagne.jpg" alt "">
+        </figure>
+       
+        
+
+   </div>
+</body>
+</html>
