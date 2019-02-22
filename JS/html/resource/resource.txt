@@ -59,3 +59,118 @@ le em : 1em est égale a & x la valeur de fonnt-size de sa balise parante.
 par example : le h1 fait 2em par defaut. Si le h1 est enfant de la balise body et qu'on a 
 donné une font-size de 14px a body : 
 la taille du h1 sera 2 x 14px = 28px
+
+INTRO JAVASCRIPT
+le javascript(developpement coté clien - front-end developpement)
+est tout ce qui est traité par le navigateur et affiché au visiteur (user)
+(nous en tant que developpeur on est auteur (author en anglais)
+
+Le dev javascript permet principalement de réagir aux actions l'utilisateur,
+directement dans le navigateur.
+Ajax : ansynchronous Javascript ans xml permet les changement sans reload de page (example
+changement des datas (données))
+
+Les qualités requises : la RIGEUR (primordial dans l'ecriture du code, les navigateurs
+trébuchent dut tout code html mal écrit (majuscule, accolades, paranthése, virgules, 
+espaces, les points ))
+faire trés attention et se relire constament.
+valider sur le valideur W3C, TEXTER
+un signe écrit 2 foix au lieur d'une peut inverser totalment la signification du code
+
+l'organisation (rangment des fichier et dossiers, nomenclature, cmmentaire, faire du code simple,
+commenté et lisible )
+La CAPACITE d'ABSTRACTION : un developpeur quand il fait face a un probleme a resoudre
+doit savoir fractionner celui-ci en morceaux plus digestes et garder une vue global de l'enssemble
+de ce qu'il écrit
+
+AVANT des commantaires il doit etre capable de
+s'imaginer le resultat du code qu'il va éxécuter.
+
+INTRODUCTUION JAVASCRIPT :
+
+La version actuelle de javascript, JS en abbrége, ES6
+est une implémenttation d'un language de script appelé
+EcmaScript  (standardisé dans les annes 90 par Netscape)
+
+inventé par brendan fich, cofondateur du projet mozilla.
+ES5 est utilisé depuis 2009, on arrive a ES6 aujourd'hui,
+
+qu'est-ce que javascript permet de faire : 
+- definir un action au clic
+- verifier des données entrées dans un formulaire
+- détecter des changement de page et lancer des alertes
+- stocker des valeurs utiles dans des variables
+- faire des opération sur des morceaux de texte (chaines de caractere / string)
+- permet d"executer du code en  reponse a certain événements se produisant sur ue page Web
+- créer ou déclancher des animations
+- faire des catousels des menu déroulants, des galeries d'images interactives, gerer
+la vidéo et l'audio
+- créer des jeux en  2D et 3D (DataVisualitation), des applications
+complétes fondéessur des bases de données, des applications mobile (online ou offline)
+
+JS est un language compacte en restant souple.
+
+Les developpeur ont écrit de nombreux outils sur le coeur de JavaScript (core), créant
+des fonctionnalités supplémentaires
+
+parmi ces outils : 2 catégories d'API navigateurs et les API tierce partie
+API : application priogramming interface, en  francais interface de 
+programmation d'application pour navigateurs.
+Ce sont des blocs de code déja préts, qui permmettents au developpeur decréer plus facilement des programmes (boite a outils deja developpées 
+ets testées)
+C'est comme du code en "KIT pour la programmation. menuvisier vs ikea
+Par example :
+Les APIs navigateur font partie intégrante du navigateurs, et pevent accéder a des donnés de l'environement informatique (l'ordinateur, lemobile)
+ou faire d'autres choses complexes.
+L'API DOM (document object model) nous permet de manupiler du HTML et du 
+CSS (créer, modifier, supprimer du HTML, appliquer de nouveaux styles abbrégela 
+page de facon dynamique)
+Example créer une popup, changer des nouveaux contenus dans une page, il
+s'agit de l'action du DOM.
+https://fr.wikipedia.org/wiki/Document_Object_Model
+
+API de geolocalisation : permet de récupérer des données géographiques
+(position en longitude / latitude de notre user
+https://developer.mozilla.org/fr/docs/Using_geolocation
+
+APIs canvas et webGL : permet de créer de graphiques animés en 2D
+(canvas) et en  3D (webGL)
+https://developer.mozilla.org/fr/docs/Web/HTML/Canvas
+https://developer.mozilla.org/fr/docs/Web/API/WebGL_API
+
+compresser de la vidéo dans les formats web : 
+OGG / MP4/ WEBM
+https://handbrake.fr/
+API web storage : permet de faire des applicztion offline (cache manifeste)
+https://developer.mozilla.org/fr/docs/Web/API/Web_Storage_API
+
+APIweb workers : multi thread en  JS / 
+
+Example Dataviz :
+
+API vidéo et audio permet de lire de la vidéo et de l'audio sans plugin
+API webN
+
+l'API de googlemaps :permet d'afficher des cartes personnalisées.
+https://cloud.google.com/maps-platform/
+
+autres API tierces parties : https://www.programmableweb.com/category/all/apis
+-------------------------------------------------
+séparation des connsepts : 
+Les régles de bases- pas de CSS dans javascript
+- pas de balises HTML dans  le javascript- pas de CSS dans le HTML (des feuilles de styles internes ou externes oui
+mais on évite les styles inline
+<p style="clor:red;">lorem </p>)
+
+
+
+
+
+
+
+
+
+
+
+
+

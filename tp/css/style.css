@@ -1,0 +1,30 @@
+#header {
+    background: navy;
+    height:10vh;
+}
+
+.slide {
+    background: #000;
+    height:10vh;
+
+}
+
+.form {
+    background: green;
+    height: 10vh;
+}
+
+.tkt {
+    background: rosybrown;
+    height: 10vh;
+}
+
+.chat{
+    background: darkblue;
+    height: 10vh;
+}
+
+footer{
+    background: red;
+    height: 10vh;
+}

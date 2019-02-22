@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Position Absolue</title>
+
+</head>
+
+<body>
+
+   <style>
+       *{
+           box-sizing: border-box;
+       }
+        
+        body{
+            margin: 0;
+        }
+
+ 
+        /* on cible le 1er p descendant du container */
+        .container p:nth-last-of-type(1){
+               color: orange;
+               position: relative;
+               /* la postition relative permet que le badge  */
+        }
+
+
+       .container{
+
+           width: 80%;
+           margin: 0 auto;
+           border: 2px solid red;
+           padding: 1rem;
+           /* permet que les triangle, rond, carre sois placé par rapport au container et pas a body */
+           position: relative;
+
+
+}
+
+       .badge{
+
+           width: 80px;
+           line-height:80px;
+           border-radius: 50%;
+           background: blue;
+           display: inline-block;
+           text-align: center;
+           left: -40px;
+           top: 20px;
+           position:  absolute; /* un élément positionné en absolute est placé par rapport à son 1er ancètre positionné.
+
+           S'il na pas d'ancètre positionné,il sera placé par rapport à son body */
+
+       }
+
+       /* Valeurs pour la propriété position:        -static
+
+       par défaut toutes les balises sont en position: static;(elle ne sont pas positionnées et restent dans le flux)        -relative: sera positionné par rapport à son emplacemment naturel dans le flux (comme si il avait une marge)
+
+       Son emplacement est reservé.
+
+       Un élément relatif devient référent de positionnement pour ses enfants absolute.
+
+       Dans ce contexte,on va donnerr une position relative au 1er "p" pour que le badge en absolute soit calé par rapport à se "p"        - Fixed: un élément qui a la position: fixed; sera calé par rapport au viewport (fenêtre du navigateur); même si la page scroll,l'objet fixed reste calé sur la fenêtre.
+
+           */ nav{
+
+               border-bottom: navy solid 3px;
+               padding: 1rem;
+               position: fixed;
+               background-color: rgba(0, 0, 0, .5);
+               color: white;
+               width: 100%;            
+           }
+           nav ul{
+
+               padding-left: 0;
+               display: flex; /*permet d'aligner les enfants (li) les uns a coté des autres dans le parents*/
+               justify-content: space-around;
+
+           }
+
+           nav li{
+
+               border: 2px solid pink;
+               padding: 1rem;
+               list-style: none;
+           }
+
+           .triangle{
+
+            width: 60px;
+            height: 60px;
+
+}
+          .carre{
+              display:inline-block;
+              width: 60px;
+              height: 60px;
+             background: orange;
+             top: 50%;
+             position: absolute;
+             left: 70%;
+          }
+
+          .rond{
+              display:inline-block;
+              width: 60px;
+              height: 60px;
+             background: blue;
+             border-radius: 50%;
+             position: absolute;
+             right: 0;
+             top: 50%;
+          }    
+
+
+
+   </style>    </body>
+
+       <nav>
+           <ul>
+
+               <li>Home</li>
+               <li>Galerie</li>
+               <li>Contact</li>
+
+           </ul>
+       </nav>    <div class="container">
+
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quia nostrum quis deserunt fuga rem aut quisquam! Assumenda, dolores consequuntur. Voluptatum quia consequatur autem amet. Voluptatem dicta recusandae minima molestiae.
+
+       <span class="badge">News</span>
+
+           </p>
+
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam harum quaerat nulla ullam? Laboriosam, facilis, natus iste aut quasi totam, minima repudiandae illum   excepturi dicta molestiae error beatae? Consequuntur.</p>
+        </p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam harum quaerat nulla ullam? Laboriosam, facilis, natus iste aut quasi totam, minima repudiandae illum excepturi dicta molestiae error beatae? Consequuntur.</p>
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam harum quaerat nulla ullam? Laboriosam, facilis, natus iste aut quasi totam, minima repudiandae illum excepturi dicta molestiae error beatae? Consequuntur.</p>
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam harum quaerat nulla ullam? Laboriosam, facilis, natus iste aut quasi totam, minima repudiandae illum excepturi dicta molestiae error beatae? Consequuntur.</p>
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam harum quaerat nulla ullam? Laboriosam, facilis, natus iste aut quasi totam, minima repudiandae illum excepturi dicta molestiae error beatae? Consequuntur.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam harum quaerat nulla ullam? Laboriosam, facilis, natus iste aut quasi totam, minima repudiandae illum   excepturi dicta molestiae error beatae? Consequuntur.</p>
+        </p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam harum quaerat nulla ullam? Laboriosam, facilis, natus iste aut quasi totam, minima repudiandae illum excepturi dicta molestiae error beatae? Consequuntur.</p>
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam harum quaerat nulla ullam? Laboriosam, facilis, natus iste aut quasi totam, minima repudiandae illum excepturi dicta molestiae error beatae? Consequuntur.</p>
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam harum quaerat nulla ullam? Laboriosam, facilis, natus iste aut quasi totam, minima repudiandae illum excepturi dicta molestiae error beatae? Consequuntur.</p>
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam harum quaerat nulla ullam? Laboriosam, facilis, natus iste aut quasi totam, minima repudiandae illum excepturi dicta molestiae error beatae? Consequuntur.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam harum quaerat nulla ullam? Laboriosam, facilis, natus iste aut quasi totam, minima repudiandae illum   excepturi dicta molestiae error beatae? Consequuntur.</p>
+        </p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam harum quaerat nulla ullam? Laboriosam, facilis, natus iste aut quasi totam, minima repudiandae illum excepturi dicta molestiae error beatae? Consequuntur.</p>
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam harum quaerat nulla ullam? Laboriosam, facilis, natus iste aut quasi totam, minima repudiandae illum excepturi dicta molestiae error beatae? Consequuntur.</p>
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam harum quaerat nulla ullam? Laboriosam, facilis, natus iste aut quasi totam, minima repudiandae illum excepturi dicta molestiae error beatae? Consequuntur.</p>
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam harum quaerat nulla ullam? Laboriosam, facilis, natus iste aut quasi totam, minima repudiandae illum excepturi dicta molestiae error beatae? Consequuntur.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam harum quaerat nulla ullam? Laboriosam, facilis, natus iste aut quasi totam, minima repudiandae illum   excepturi dicta molestiae error beatae? Consequuntur.</p>
+        </p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam harum quaerat nulla ullam? Laboriosam, facilis, natus iste aut quasi totam, minima repudiandae illum excepturi dicta molestiae error beatae? Consequuntur.</p>
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam harum quaerat nulla ullam? Laboriosam, facilis, natus iste aut quasi totam, minima repudiandae illum excepturi dicta molestiae error beatae? Consequuntur.</p>
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam harum quaerat nulla ullam? Laboriosam, facilis, natus iste aut quasi totam, minima repudiandae illum excepturi dicta molestiae error beatae? Consequuntur.</p>
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam harum quaerat nulla ullam? Laboriosam, facilis, natus iste aut quasi totam, minima repudiandae illum excepturi dicta molestiae error beatae? Consequuntur.</p>
+           <a href="#" class="carre">carre</a>
+           <a href="#" class="triangle">triangle</a>
+           <a href="#" class="rond">rond</a>
+
+
+
+  
+
+</html>
+
+Zone de message
