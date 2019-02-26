@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // ici one déclare la variable a 
+        var a = 10;
+        // ici on réassigne une nouvelle valeur a
+        var a = 8;
+
+        // pour tester une variable on ouvre la console , on écrit le nom de
+        //la variable a droite des >> et on appuie sur enter
+        // autre facon de tester 
+
+        // affiche une alert contenant la valeur de la variable a
+       // alert(a);
+        //  affiche une alert contenatn la chaine caractére a 
+       // NE PAS METTRE DE GUILLMETS
+       // alert("avion");
+
+        // 3 e facon de tester 
+        // on écrit dans le script
+
+        //console.log(a);
+
+        // résultat : le navigateur affiche le résultat de a dans la console.
+
+        var b = 4;
+        // si on veut faire un calcule avec une variable non défFinie, le navigateur 
+    // affichera une erreur en sole : Réfference Error: is not defined
+
+    // affiche une erreur car la valeur c n"existe pas: ajoute = a + b;
+    // attention js est sensible a la casse (case sensitive )
+    // donc A est différant de a donc l'instruction suivante contiens aussi une
+    // referance console.error( car la variable A n'est pas déclarer);
+      //ajoute = A = b;
+        ajoute = a + b; // fonctionne correctement car la variable a et b
+       // sont bien déclarées.
+
+        
+      
+
+        // afficher le résultat de ajoute dans une alert 
+       // alert(ajoute);
+        // afficher le résultat de ajoute dans la console 
+       // console.log(ajoute);
+
+        // autre facon de déclrarer une variable 
+        var maVariable;
+        maVariable = 'nelson';
+
+        //console.log(maVariable);
+        // ici one déclare la variable soustrait et on lui assigne la valeur a
+       // - b
+       // on affiche le résultat en console
+        soustrait = a - b;
+       // console.log(soustrait);
+        // la console affiche 4 
+
+        var message;
+      //  message = 'Hello';
+
+      //  message = 'World'
+
+      //  var hello = 'Hello World';
+
+        //alert(message);
+
+    // on aassigne a la variable message, le conntenue de la varirable hello
+    // résultat : nos deux varirablers hello et message on le méme contenue
+    // 'Hello Word'
+      //  message = hello;
+
+       // alert(message);
+
+        prenom = "nelson";
+        age = 19;
+// on fait une concaténation avec l'opérateur +
+// résultat : nelson a 19 ans 
+
+        console.log(prenom + ' a ' + age + ' ans ');
+
+        document.write(prenom + ' a <br>' + age + ' ans ');
+        // ici on demande au navigateur si le chiffre 12 est inférieur ou 
+       // égal  a 13 , le navigateur va répondre avec la valeur booléenne : 
+      //  true
+        console.log(12 <= 13);
+        //  résultat en console : true
+        
+
+
+        
+
+    </script>   
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+   <button>Change la couleur de fond</button> 
+
+   <script>
+   
+    // EXERCISE : FAIRE UNE FOCTION NOMMe changeBg()
+ //qui contient 1 seul ProcessingInstruction// cette fonction doit etre déclanché lors du clic sur le bouton
+
+ var btn = document.querySelector('button');
+
+ function changeBg(){
+
+    document.body.style.backgroundColor = 'orange';
+
+
+     alert('ok !');
+ }
+
+ btn.addEventListener('click', changeBg);
+
+          
+
+   </script>
+</body>
+</html>

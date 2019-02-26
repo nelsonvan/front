@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+   <button>Change la couleur de fond</button> 
+
+   <script>
+   
+    // EXERCISE : FAIRE UNE FOCTION NOMMe changeBg()
+ //qui contient 1 seul ProcessingInstruction// cette fonction doit etre déclanché lors du clic sur le bouton
+
+ var btn = document.querySelector('button');
+
+ 
+ function random(number){
+           // Math.floor convertir en nombre entier
+            return Math.floor(Math.random()* number);
+ }
+
+ function changeBg(e){
+     e.target.style.backgroundColor = 'hsla(' + random(360) + ', 100%, 50%, 1)
+
+   // document.body.style.backgroundColor = 'hsla(' +  random(360)+', 100%, 57%, 1.0)';
+
+
+    // alert('ok !');
+ }
+
+ btn.addEventListener('click', changeBg);
+ document.body.style.backgroundColor 
+ 
+
+ 
+   </script>
+</body>
+</html>

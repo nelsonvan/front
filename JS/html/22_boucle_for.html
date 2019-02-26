@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Les boucles</h1>
+    <p>Les instructions for et while qui sont deux types de boucles les plus utilises en js,
+    servent a répter plusieurs lignes de code</p>
+    <h2>la boucle FOR</h2>
+    <p>For prend 3 paramétres encadrés dans des paranthéses, suivie entre accolades des
+      instruction a éxecuter autant de fois que la boucle l'indique, les paramétres sont </p>
+      <ul>
+        <li>initiallisation : ici on déclare la variable quiservira de compteur</li>
+        <li>condition : <strong>tant que cette condition est vraie</strong> la boucle
+        séxecutera</li>
+        <li>Expression finale : expression qui est éxecutée a chaque fin de boucle</li>
+      </ul>
+      <code>
+        for (initiallisation; condition; incrémentation){
+            instructuion 1;
+            instructuion 2;
+        }
+      </code>
+
+      <script>
+          for(var i=0; i < 5; i++){
+              console.log(i)
+              document.write(i) + "<br>";
+          }
+
+          // dans l'ordre
+          /* 
+          - initialitation d'une variable i
+          egal a 0
+          - tant que i est inférieur a 5, on
+          éxecute la boucle
+          - a chaque fin de boucle, on
+          incrémente de 1
+
+          ici, la boucle va séxécuter 5 fois,
+          quand la variable i aura comme
+          valeurs 0,
+
+          a 5, la condition sera fausse et 
+          la boucle ne sera pas éxécutée
+          */
+
+
+          
+        // autre éxample de boucle
+
+        tableau = ["chien ", "chat ", "souris ",
+    "lapin ", "tortue "];
+
+    // tableau.length nous permettra de récupérer le nombred'éléments que le
+    // tableau contient.
+
+    for( var j=0; j < tableau.length; j++){
+        //affiche chacune des valeurs du tableau
+        document.write(tableau[j]  + "<br>");
+    }
+
+    // autre example d'utilisation de for : convertir
+   // touts les objects d'un tableau en majuscule et les 
+   // afficher
+
+   var noms = ["fred ", "marc ", "habib ", "samira "];
+   var upper = [k];
+
+   for(var k=0, n = noms.length; k<n; k++){
+       upper[k] = noms[k].toUpperCase();
+   }
+   document.write(upper);
+
+   // derniére boucle for
+        for(var m=0; m<10; m++){
+            alert('m contient la valuer :' + m);
+        }
+        
+  
+      </script>
+</body>
+</html>
