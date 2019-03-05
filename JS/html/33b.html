@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Les fonctions</h1>
+    <p>Il faut garder a l'esprit qu'on peut appelr une fonctionns de n'importe ,
+        ou meme a l'interieur d'une autre fonctions. <br>
+        Les fonctions imbriqu"s sont souvent utiliseées comme un moten de garder du
+        code bien organise . Une grande fonction complexe est plus facile a comprendre
+    </p>
+
+    <script>
+        // ETAPE A : on va faire une meta fonction qui imbrique plusieurs sous
+        // fonctions
+
+        function maMetaFonction(){
+            var maVariable = 1;
+
+            sousFonction1(maVariable);
+            sousFonction2(maVariable);
+            sousFonction3(maVariable);
+        }
+        function sousFonction1(valeur){
+            document.write(valeur);
+        }
+        function sousFonction2(valeur){
+            document.write(valeur);
+        }
+        function sousFonction3(valeur){
+            document.write(valeur);
+        }
+ // ICI on déclanche la metafonction 
+        maMetaFonction();
+
+      //ici nous avons bien acc"s a la variable maVariable car on a passé sa valeur dans la 
+      // metafonction en tant que paramétre.
+      
+    </script>
+</body>
+
+</html>    

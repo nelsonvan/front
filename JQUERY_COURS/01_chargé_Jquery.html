@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="Jquery/jquery-3.3.1.min.js"></script>
+    <script>
+     // methode traditionnelle pour tester que le dom sont bien chargés
+     /*document.addEventListener("DOMContentLoaded", function(){
+                                                            
+        console.log("DOM chargé");
+
+     })
+     $(document).ready(){
+         console.log('Le DOM et Jquery spnt bien chargé')
+                                                 }       */
+        
+    // éeme methode (conseillée) pour charger jquery et le DOM
+    $(function(){
+        console.log("Le DOM et Jquery est bien chargé");
+
+
+    })
+    
+    </script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>La portée des fonctions et les conflits </h1>
+    <p>La portée est un concept trés important en
+        javascript losqu'on a affaire a des fontions.
+        quand on crée une fonctions, les variables et autres
+        choses qui sonnt définies a l'intérieur de la 
+        fonction on leur propre porté. ce qui signifie 
+        qu'elles sont enfermées dans leurs proprecompartiment séparé et
+         qu'elles ne peutvent pas etre 
+        dehors de la fonction (metaphore du zoo, chaque
+    animal a son propre enclos, la protée de la fonction)
+</p>
+<p>Le plus haut niveau en  dehors de toutes vos fonnctions
+    est appelé la portée global. Les valeurs
+    definies dans la portée global sont accessibles a partir
+    de n'importe quelle partie du code (le
+    gardien du zoo qui a toutes les clés)</p>
+
+   <p>Le javascript est construit de cette facon pour
+       plusieurs raisons et en particulier pour la sécurité 
+       et l'organisation <br>
+       Parfois, vous ne voulez pas que vos variables soient
+       accessibles depuis toutes les autres parties du code 
+       votre script externes appelés dupuis l'extérieur de 
+       votre fonction pourraient interferer avec votre
+       code et causer des probléme parce qu'ils utilisent
+       les meme noms de variables que d(autres parties du 
+       code, provoquant des conflit, peut etre fait par 
+       malveillance ou, par accident
+   </p>
+   <p>Par example, on a un fichier html qui a un fichier
+       html qui appelle deux fichiers javascript
+       externes , et que les deux 
+       ont une variable et unne ofnctions defin qui 
+       utilise le meme nom
+
+   </p>
+
+    
+     <script src="/porte_variable/script.js"></script>
+     <script src="/porte_variable/script2.js"></script>
+
+     <scrpit>
+        <!-- On invoque la fonction() qui peut -->
+        ditSalut();
+
+     </scrpit>
+</body>
+</html>

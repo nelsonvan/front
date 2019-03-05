@@ -17,12 +17,18 @@
 
  var btn = document.querySelector('button');
 
+ function random(number){
+    return Math.floor (Math.random() * number);
+    
+
+ }
+
  function changeBg(){
 
-    document.body.style.backgroundColor = 'orange';
+    document.body.style.backgroundColor =  'hsla('  +  random(360) +  ', 100%, 50%, .5)';
 
 
-     alert('ok !');
+    // alert('ok !');
  }
 
  btn.addEventListener('click', changeBg);

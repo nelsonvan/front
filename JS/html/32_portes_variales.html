@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>On va crée deux fonction appelées a() et b() et trois variables - x, y et z - deux
+        de d'entre elles seront définies a l'interieur 
+        de la fonction , et l'autre sera definie dans un 
+        
+    </p>
+
+    <script>
+        // ETAPE A
+
+   // la variable x est dans la portée globale
+        var x =1;
+// la variable y et z sont dans les portées
+// locales car elles sont dans les fonctions.
+        function a(){
+            var y = 2;
+        }
+
+        function b(){
+            var z = 3;
+        }
+        
+        function sortie(valeur){
+            // crée le noeud (node) p esy un object 
+            // du document 
+            var para = document.createElement('p');
+            // ajoute ce node comme enfant de la balise body
+            document.body.appendChild(para);
+            // crée le node de texte qui est le contenu de la balise p
+            // avec la methode textContent. (on poura utiliser innerhtml)
+            para.textContent = 'La valeur est : ' + valeur;
+
+        }
+        // invocation de la fonction sortie en lui envoyant l'argument x
+       sortie(x); // commme x est dans la portée globale, on y a bien accés et
+       // deuc le parahraphe crée par la fonction sortie affiche bien la valeur 1
+       // de x vous devez normalment voir la valeur de la variable x
+       sortie(y);
+
+       // sortie y et sortie z renvoient un message d'erreur du type
+      // reference error: z is not defined pourqoi ?
+      // a cause de la porté de fonction - y et z sont enfermées dans les fonction
+      //a() b() donc la fonction sortie() ne peut pas les atteindre 
+     // lorsqu' elles sont appeles depuis la portée global.s
+
+
+
+    </script>
+</body>
+</html>

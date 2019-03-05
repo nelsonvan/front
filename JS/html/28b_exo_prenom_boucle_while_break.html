@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exo prénoms avec while</h1>
+    <p>Ici on va demander a l'internaute son prénom, ainsi que les
+    prénoms des fréres et souers. on va afficher une boite de dialogue
+    avec , la methode prompt () pour chaque prénom 
+    comment savoir a l'avance combien il y aura de fréres et soeurs ?</p>
+    <p>
+       Nous allons utiliser une boucle while qui va 
+       demander, a chaquepassage dans la boucle, un
+       prenom suplémentaire. <br>
+       la boucle ne s' arretera que lorsque
+       l'utilisateur choisira de ne plus entrer de 
+       prénom.
+    </p>
+    
+    <script>
+    var prenoms = '', 
+        prenom;
+       
+        /* ici ne pas faire on n'a une boucle infini puisque la condiiton 
+        est toujour vraie proceed = true la boucle continue de jouer et donc il m'affiche le navigateur
+        affiche prompt et ne s'arret jamais de l'afficher puisuqe proceed
+        n'est jamais false
+        while(proceed){
+            prenoms + prompt('Entrez un prénom');
+        } 
+        alert(prenom); */
+
+
+        
+        while(true){
+            prenom = prompt('Entrez un prénom');
+
+            /* ici on va tester SI l'utilisateur entre un prenom dans le prompt
+             alors on ajoute ce prenom dans le tableau prenoms 
+             SINON
+             on sort de la boucle en mettant la variable 
+             proceed a false.
+             */
+
+             if(prenom){
+                 prenoms += prenom + ' '; // ici on ajoute unn nouveau prenom au tableau
+                 //prenoms suivi d'un espace
+
+             } // fin du if
+             else{
+                 break; // puisqu' aucun prenom n'a été
+                // entrée en fait en sort d'invalider en mettant un break qui nous fait sortire de la boulce
+                // une condition en mettant proceed a faulse
+             } // fin de else
+
+        } // fin de la boucle while
+        document.write(prenoms); // affiche les prénoms les
+        // un a la suite des autres 
+
+
+         
+    
+    </script>
+</body>
+</html>

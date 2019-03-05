@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>L'incémentation et la décrémentation</h1>
+    <p>sont des racourcis pour ajouter ou soustraire une valeur a une
+    variable</p>
+    <ul>
+        <li>++ signifie ajouter 1a la variable x</li>
+        <li>--x signifie retirer 1 a la variable x</li>
+        <li>+= 4 signifie ajouter 4 a la variable heure</li>
+        <li>Autres variantes : -=, *=, /=, %=</li>
+    </ul>
+
+    <p>
+        x++ et ++x ont le meme résultat a la difference prés que x++ retourne
+        la valeur de x avant d'effectuer l'operation alors que ++x retourne 
+        la valeur x APRES avoir effectué l'opération
+
+    </p>
+
+   <script>
+       var x = 5;
+
+       console.log(x++); // donne 5 en console mais x est maintenant egal a 6
+
+       console.log(x);
+
+       console.log(++x); // x est maintenant egal a 7 et donne 7 en console
+
+       var heure = 5;
+
+       heure++;
+       console.log('il est ' +  heure + ' heures');
+
+       heure+=3; // heure devient 8
+       console.log('il est ' +  heure + ' heures');
+
+       heure /=2; // heure devient 4
+       console.log('il est ' +  heure + ' heures');
+
+       heure %=3; // heure devient 1 car 4 divisé par 3 reste 1
+       // singne % est l'opérateur MODULO en
+       
+       
+       
+       console.log('il est ' +  heure + ' heures');
+
+
+
+       
+
+
+   
+   
+   </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .msgBox{
+            background-color: silver;
+            width: 242px;
+            height: 242px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .msgBox p{
+            background-color: pink;
+            padding: 10px 20px;
+        }
+        .msgBox button{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+   <div class="msgBox"> <!--on retire la div car on va la génnérer en javascript -->
+            <!-- <p>Message</p> -->
+        <!-- <button>X</button> -->
+    </div> --->  
+    <button id="btnAfficheDialogue">Affiche la boite de dialogue</button>
+    <script>
+        var btnOpenBox = document.getElementById('btnAfficheDialogue');
+
+
+
+
+
+
+        function afficheMessage(){
+            var body = document.querySelector('body');
+            var boiteDialogue = document.createElement('div');
+            
+            boiteDialogue.setAttribute('class', 'msgBox');
+            body.appendChild(boiteDialogue);
+
+            // crée une variable pMessage qui crée un l'object p
+
+            var pMessage = document.createElement('p');
+            // ajouter a cette object pMessage suivant je suis une boite de dialogue
+            // ajoute ce pMzssage comme enfant de la boiteDialogue
+
+           
+           
+           pMessage.textContent = 'je suis une boiteDialogue';
+        // donne a la boite de dialogue comme enfant pMessage avec la methode appendChild
+         boiteDialogue.appendChild(pMessage);
+
+          
+
+
+       
+
+         // fin de la fonction affiche message 
+        btnOpenBox.addEventListener('click',afficheMessage);
+
+        var clausebtn = document.createElement('button');
+
+
+       clausebtn.textContent = 'x';
+
+     boiteDialogue.appendChild(clausebtn);
+        }
+
+    </script>
+</body>
+</html>

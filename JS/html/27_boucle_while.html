@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Les boucles for et while (suite)</h1>
+   <p>servent a répeter une ou plusieurs lignes de code</p>
+   <h2>La boucle while en javascript (répéter TANT QUE)</h2>
+   <p>définit une liste d'instruction a éxécuter TANT QU'UNE CONDITION EST VRAIE</p>
+   <strong>Structure de la boucle while</strong>
+   <pre>
+      while(condition){
+          instructuin 1
+          instruction 2
+      }
+
+   </pre>
+   <script>
+       var x = 0;
+// TANT QUE x est inférieur a 20 on entre dans la boucle
+// et on réalise l'instruction ajoue 5 a x
+       while(x<20){
+           x +=5; // ajoute 5 a la variable x
+           //console.log(x); // si on affiche en console quand on est dans la boucle
+           // la console affichera la valeur de x a chaque tour de boucle
+       }
+       console.log(x); // ici on affiche la valeur finale apres
+       // que la boucle a été éxécutée donc on aura 20 en console
+
+       // while ne prend qu'un seul paramétre : la
+       // condition a verifier (tant que x < 20). tant qu'elle
+       // est vraie la boucle continnue de s'éxécutée
+
+       // ici, la boucle sera exécutée 5 fois et x aura comme
+       // valeur final 20
+
+       // la boucle while se répete tant que la conditon est
+       // validée ca veut dire qu'il faut s'arranger a un
+       // moment pour que la condition ne plus vraie,
+       // sinon la boucle se répéterait a l'infini (on plante
+       // le navigateur..)
+
+       
+   
+   
+   </script>
+</body>
+</html>

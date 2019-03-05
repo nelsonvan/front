@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Boîte de dialogue perso</title>
+  
+
+   <style>
+
+       .msgBox {
+
+           background: rgb(51, 51, 219);
+
+           width: 242px;
+
+         /*  height: 100px;*/
+
+           position: absolute;
+
+           left: 50%;
+
+           top: 50%;
+
+           transform: translate(-50%, -50%);
+
+       }
+
+       .imgAttention{
+
+           position: absolute;
+
+           left:.5rem;
+
+           top: 2rem;
+
+       }
+
+       .msgBox p {
+
+           text-align: center;
+
+           padding: 10px 20px;
+
+       }        .msgBox button {
+
+           position: absolute;
+
+           top: 0;
+
+           right: 0;
+
+       }
+       body{
+           background: rgb(30, 30, 143);
+       }
+
+   </style>
+
+</head><body>
+
+   <!-- <div class="msgBox">
+
+               <p>Message</p>
+
+               <button>X</button>
+
+           </div>        -->
+
+           <!--             -->
+
+   <button id="btnAfficheDialog">Affiche la boite de dialogue</button>
+
+   <script>
+
+       var btnOpenBox = document.getElementById('btnAfficheDialog');        function afficheMessage(msgText, msgType){
+
+           // on selectionne la balise body dans le DOM
+
+           var body = document.querySelector('body');
+
+           // dans une var boiteDialogue on crée un élément div avec la méthode .createElement
+
+           var boiteDialogue = document.createElement('div');
+
+           // on ajoute un attribut class .msgBox à la boiteDialogue avec la méthode setAttribute('nom de l'attribut', 'et nouvelle valeur');
+
+           boiteDialogue.setAttribute('class', 'msgBox');
+
+           body.appendChild(boiteDialogue);
+
+           // créer un paragrapghe
+
+           var pMessage = document.createElement('p');
+
+           // créer le message dans le p
+           
+           pMessage.textContent = msgText;
+
+           // ajoute ce p message comme enfant de la div
+
+           boiteDialogue.appendChild(pMessage);            var closeButton = document.createElement('button');
+
+           closeButton.textContent = 'X';
+
+           pMessage.appendChild(closeButton);
+
+           closeButton.addEventListener('click', function () {
+               // au clic sur le bouton x, femreture de la boie de dialogue
+
+               boiteDialogue.parentNode.removeChild(boiteDialogue);
+
+           })
+           /*
+           Si msgtype a la valeur 'chat' ALORS l'icone chat sera affichée comme
+           image de fond du message et lma couleur d'arriere plan de la boite de dialogue sera blue
+           SINON SI le msgType a la valeur 'warning' 
+           l'icone 'warning sera affichée comme
+           image de fond du message et lma couleur d'arriere plan de la boite de dialogue sera rouge
+           */
+           // EXO A FAIRE TOUT SEUL : si msg type a la valeur 'chat ALORS on affiche alert ('chat')
+           // si
+
+           if(msgType === 'chat'){
+          alert('chat');
+          // on affiche l'image de ofnd chat.png comme background de pMessage
+
+          pMessage.style.backgroundImage = 'url(images/chat.png)';
+      }
+     
+      else if(msgType === 'warning'){
+        alert("Attention");
+        
+      }
+      else{
+        alert('BUG');
+
+      }
+      
+        
+           
+
+
+           
+           
+           
+           var  attentionLogo = document.createElement('img');
+           attentionLogo.src = 'images/warning.png';
+           attentionLogo.setAttribute('class','imgAttention');
+           pMessage.appendChild(attentionLogo);
+                                               
+       }
+
+      // ici les paranthése qui suivent afficheMessage déclanche immédiatement la fonction
+    // sans attendre le click, pour eviter ca on va fair eune éeme version ci -dessous
+
+      // btnOpenBox.addEventListener('click', afficheMessage('le nouveau texte de la boite'));
+
+       // si nous voulons spécifier des paramétres pour la fonction que nous appelons
+       //(ici, la fonction affiche message), alors nous ne pouvons pas l'invoquer 
+       //directement - nous avons besoin de la mettre a l'interieur d'une fonction anonyme
+      // (elle n'est pas dans la portée immédiate et n'est donc pas applée immediatment)
+       /*
+       maintenant elle ne sera pas appelée tant que le bouton n'est pas cliqué
+
+       */
+       // ici on deux arguments envoyés a la fonction afficheMessage (séparées par une virgule)
+      btnOpenBox.addEventListener('click', function(){
+      //  afficheMessage('Salut, on papote ?', 'chat');
+      afficheMessage('Salut, on papote ?', 'warning');
+
+      });
+
+
+
+      
+
+
+
+   </script>
+
+</body></html>
+

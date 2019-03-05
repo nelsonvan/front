@@ -1,0 +1,98 @@
+.container-fluid{
+
+    padding: 0;
+
+}
+
+.ohMyCat{
+
+    padding-top: .5rem;
+
+    padding-left: 10%;
+
+    background: rgb(8, 8, 46);  
+
+}
+
+.ohMyCat p{
+
+    color: #fff;
+
+    font-family: 'Indie Flower', sans-serif;
+
+    font-weight: bolder;
+
+    font-size: 1rem;
+
+}
+
+#tropBon{
+
+    height: 9rem;
+
+    background-image: url(../img/background.jpg); 
+
+    text-align: center;
+
+    color: #fff;
+
+    font-weight: bolder;
+
+    font-size: 2.5rem;
+
+    line-height: 9rem;
+
+    font-family: 'Indie Flower', sans-serif;
+
+}
+
+.slide{
+
+    padding-top: 1rem; 
+
+    
+
+}
+
+.form{
+
+    padding-top: 2rem; 
+
+}
+
+.form p{
+
+     text-align: center;
+
+    font-family: 'Indie Flower', sans-serif;
+
+    color: darkmagenta ;
+
+    letter-spacing: 0.1rem; 
+
+}
+
+#bgGris{
+
+    background: rgb(185, 186, 187);   
+
+}
+
+.text{
+
+}
+
+.chat{
+
+    
+
+}
+
+footer{
+
+      background: rgb(8, 8, 46);  
+
+      height: 5rem;
+
+}
+

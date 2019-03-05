@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+   <meta charset="UTF-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+   <title>Article</title>
+
+</head>
+
+<style>
+
+   *{
+
+       box-sizing: border-box;
+
+   }
+
+   article{
+
+       width: 200px;
+
+       background: lightgreen;
+
+       padding: 10px;
+
+   }</style>
+
+<body>
+
+   <article>
+
+       Contenu article
+
+   </article>    <p class="resultat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat obcaecati velit ea, facere nemo ipsa voluptatum quos ut assumenda, molestias repellendus dolor veniam omnis ex quidem temporibus delectus ad rerum.</p>
+
+   <script src="js/jquery-3.3.1.min.js"></script>
+
+   <script>
+
+       $(function(){
+
+           console.log("salut");
+
+           // selectionné article avec selecteur css
+
+           $('article').on('click', function(){
+
+               // alert('salut :-)');
+
+               $(this).css("background-color", "indianred");
+
+           });
+
+       })    </script>
+
+</body>
+
+</html>
+

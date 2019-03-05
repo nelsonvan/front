@@ -43,18 +43,58 @@
         canvas.width = WIDTH;
         canvas.height = HEIGHT;
 
+        function random(number){
+            // Math.floor convertir en nombre entier
+            return Math.floor(Math.random()* number);
+            // ici on convertit en nombre entier (sans virgule) le
+            // numbre randomisé et multiplié par la valeur  number  
+            // (qui est l'arguments donné en entrée dans la fonction)
+
+        }
+
         function dessineUnCercle(){
             feuille.clearRect(0,0, WIDTH, HEIGHT);
-            feuille.beginPath();
-            feuille.fillStyle = 'rgba(255, 0, 0, .5)';
+
+            // 3 paramétre a indiquer dans les paranthése de for qui sero séparé par des points virgule
+            /* 1 déclaration de la variable de depart (i)
+            2 la condition pour que la boucle continue
+            3 l'incrementations a la fin de chaque passage de la boucle */
+           var i = 0,  combienDeFois = 475;
+
+           function f(){
+
+          
+
+                // les instruction a réliser autant de fois que la boucle le dit
+                feuille.beginPath();
+            feuille.fillStyle = 'hsla('  +  random(360) +  ', 100%, 50%, .5)';
 
             // dessiner un cercle de 30px de diamétre , positioné a 100px en x
             // et 100px en y l'angle gauche du canvas
             // feuille.arc()x, y, radius, startAangle, endAngle)
 
-            feuille.arc(100, 100, 30, 0, 2 * Math.PI);
+            feuille.arc(random(WIDTH), random(HEIGHT), random(50), 0, 2 * Math.PI);
             feuille.fill();
-        } //FIN DE LA FONCTION
+
+            i++;
+            if(i< combienDeFois){
+                setTimeout(f, 1);
+
+            }
+           }// fin de la déclaration de la fonction()
+           f();
+
+
+            } // fin de la boucle for
+            
+            
+
+
+
+
+         
+           
+        //FIN DE LA FONCTION
 // paralétre de addEvenllisener : evénément, action
 // ATTENTION QUAND ON VEUT DECLENCGER UNE FONCTION LORS D'UN EVENEMENT?NE
 // SURTOUT PAS METTRE DES COUPLE DE PARANTHSE
