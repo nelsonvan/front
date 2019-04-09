@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="cible">Votre message</label><br>
+        <textarea name="" id="cible" cols="30" rows="10">
+
+        </textarea>
+    </form>
+    <p class="info"></p>
+    <span class="testKey">RIEN</span>
+    <script src="Jquery/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            $('#cible').keydown(function(){
+                $(this).css('background-color','green' );
+               
+            }); // fin du keydown
+
+            $('#cible').keyup(function(){
+                $(this).css('background-color','blue' );
+               
+            }); // fin du keydown sur #cible
+
+            $('#cible').keypress(function(ev){
+
+                $('.info').text(ev.which);
+
+            })
+
+            })
+
+        
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font: 1.4/1.5 arial, helvetica, sans-serif;
+    margin: 0;
+  
+}
+
+nav{
+    border: 2px darkblue solid;
+    width: 100%;
+    height: 70%;
+}
+main{
+    border: 2px orange solid;
+    width: 100%;
+    height: 70%;
+}
+
+
+header{
+    /* background: url(../img/img/background.jpg) no-repeat 50% -200px; */
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 35%;
+}
+.background{
+    width: 100%;
+    height: 25%;
+}
+footer{
+    border: 2px orangered solid;
+    height: 15%;
+    width: 100%;
+  
+
+}
+.img-agence{
+    width: 95px;
+    height: 80px;
+    margin-left: 70%;
+
+
+}
+
+.vehicule{
+    margin-left: 20%;
+}
+
+.btn{
+    color: white;
+    font-family: cursive;
+    margin-left: 27%;
+   
+    
+}
+h3{
+    margin-left: 50%;
+    
+   
+}
+
+.agence{
+    width: 50%;
+    display: block;
+   margin-left: 40%;
+}
+.img-agence{
+    width: 20%;
+    height :20% ;
+    margin-left: 30%;
+   
+}
+
+.para-footer{
+   
+
+}

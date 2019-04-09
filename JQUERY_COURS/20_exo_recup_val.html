@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+    *{
+
+        box-sizing: border-box;
+
+    }
+
+    html{
+
+        font-size: 62.5%;/*base 10px */
+
+    }
+    html, body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    body, input, textarea{
+
+        font: 1.3rem/1.5 arial, helvetica,sans-serif;
+
+    }
+
+    #monForm{
+
+        width: 40%;
+        background: blanchedalmond;
+        padding: 2rem;
+        margin: 0 auto;
+
+    }
+
+    #monForm fieldset {
+
+        border: 1px dashed silver;
+        border-radius: 1rem;
+        box-shadow: 0 0 3px rgba(0, 0, 0, .25)
+
+    }
+
+    #monForm fieldset legend{
+
+        background: blanchedalmond;
+        padding: 2rem; 
+
+    }
+
+    #monForm input #monForm textarea{
+
+        width: 100%;
+        margin: 5px 0;
+
+    }
+
+
+
+    #monForm p{
+
+    margin-top: .5rem;
+    margin-bottom: 0;
+
+    }
+
+
+
+    </style>
+
+</head>
+<body>
+
+<form action="traitement.php" method="GET" id="monForm">
+    <fieldset>
+        <legend>Mes infos perso</legend>
+        <p>
+        <label for="nomComplet">Votre Nom et prénom</label>
+        <input type="text" id="nomComplet" placeholder="Nom et Prénom">
+        </p>
+        <p>
+            <label for="Votre e-mail">Entrez votre e-mail</label>
+            <input type="emailComplet" placeholder="e-mail" >  
+            </p>
+            <p>
+              <label for="email"></label>
+              <input type="email" id="email" placeholder="e-mail" >  
+            </p>
+            <p>
+            <label for="tel">Tel</label>
+            <input type="tel" id="tel" placeholder="Tel" >  
+            </p>
+            <p>
+            <label for="sujet"></label>
+            <input type="text" id="sujet" placeholder="Sujet" >  
+             </p>
+             <p>
+            <label for="message">Votre Message</label>
+          <textarea name="message" type="text" id="message" placeholder="Message..."></textarea>  
+            </p>
+    </fieldset>
+</form>
+
+
+
+
+
+
+
+
+
+    <!-- SCRIPT -->
+
+    <script src="Jquery/jquery-3.3.1.min.js"></script>
+    <script>
+
+        $(function () {
+            console.log('coucou');
+
+            $('#monForm').on('submit', function(){
+                ev.preventDefault();
+
+                // récuperer mes infos dans des variables
+                var nomComplet = $('#nomComplet').val();
+
+                $(this).replaceWith(
+
+                
+                    // attention on a des apostrophes invérsées altGr + 7
+
+                   `<p class="feedback">
+                        Bonjour <strong> ${nomComplet} </strong>
+                        Vous nous avez contacté au sujet de
+                        <strong> ICI LE SUJET< /strong>
+                        Nous vous renconracterons prochainement au
+                        <strong>ICI LE TEL< /strong>
+                        <br> Voici votre message <br>
+                        ICI LE MESSAGE
+                    </p> `   
+                )
+
+                
+
+                
+
+
+
+                $('<p>').append('Nom :' + $('#nomComplet')).val().appendTo('body');
+            })
+
+
+
+
+
+        })//FIN DU SCOPE
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+
+    <style>
+
+    *{
+
+         box-sizing: border-box;
+
+    }
+
+     html{
+
+            font-size: 62.5%; /* à cause des beug 62.5% = 10px */
+
+        }
+
+     body, label, input,textarea{
+
+            font-size: 1.4rem/1.5 arial, helvetica, sans-serif; /* 1.4rem = 14px / enfant body font-size en "em" c'est 1 em = 14px donc 2em = 28px */
+
+        }
+
+        #monForm{
+
+            width: 60%;
+
+            background: blanchedalmond;
+
+            padding: 2rem;
+
+            margin: 0 auto;
+
+        }
+
+        #monForm fieldset{
+
+           border: 2px solid silver;
+
+           border-radius: 1rem;
+
+           box-shadow: 0 0 3px  rgba(0, 0, 0,.25);
+
+        }
+
+        #monForm fieldset legend{
+
+        padding: 1rem;
+
+        background: blanchedalmond;
+
+        }
+
+         #monForm  input,  #monForm textarea{
+
+             width: 100%;
+
+             margin: 5px 0;
+
+         }
+
+          #monForm  p{
+
+              margin-top: .5rem;
+
+              margin-bottom: 0;
+
+          }
+
+          .feedback{
+
+              width: 50% ;
+
+              border: 1px silver solid;
+
+              padding: 2rem;
+
+              border-radius: 1rem;
+
+              box-shadow: 0 0 15px black;
+
+              margin: 0;
+
+              position: absolute;
+
+              top: 10%;
+
+              left: 50%;
+
+              transform: translate(-50%, -50%) scale(1.5);
+
+          }
+
+          .email{
+
+              width: 50% ;
+
+              border: 1px silver solid;
+
+              padding: 2rem;
+
+              border-radius: 1rem;
+
+              box-shadow: 0 0 15px black;
+
+              margin: 0;
+
+              position: absolute;
+
+              top: 25%;
+
+              left: 50%;
+
+              transform: translate(-50%, -50%) scale(1.5);
+
+          }
+
+          .tel{
+
+              width: 50% ;
+
+              border: 1px silver solid;
+
+              padding: 2rem;
+
+              border-radius: 1rem;
+
+              box-shadow: 0 0 15px black;
+
+              margin: 0;
+
+              position: absolute;
+
+              top: 40%;
+
+              left: 50%;
+
+              transform: translate(-50%, -50%) scale(1.5);
+
+          }
+
+          .sujet{
+
+              width: 50% ;
+
+              border: 1px silver solid;
+
+              padding: 2rem;
+
+              border-radius: 1rem;
+
+              box-shadow: 0 0 15px black;
+
+              margin: 0;
+
+              position: absolute;
+
+              top: 55%;
+
+              left: 50%;
+
+              transform: translate(-50%, -50%) scale(1.5);
+
+          }
+
+          .message{
+
+              width: 50% ;
+
+              border: 1px silver solid;
+
+              padding: 2rem;
+
+              border-radius: 1rem;
+
+              box-shadow: 0 0 15px black;
+
+              margin: 0;
+
+              position: absolute;
+
+              top: 70%;
+
+              left: 50%;
+
+              transform: translate(-50%, -50%) scale(1.5);
+
+          }
+
+    </style>
+
+</head>
+
+<body>
+
+    <form action="#" id="monForm">
+
+        <fieldset>
+
+            <legend>Mes info pro</legend>
+
+            <p>
+
+                <label for="nomComplet">Nom Complet</label>
+
+                <input type="text" name="" id="nomComplet" placeholder="Prénom et Nom">
+
+            </p>
+
+            <p>
+
+                <label for="email">Email</label>
+
+                <input type="email" name="" id="email" placeholder="type your email">
+
+            </p>
+
+            <p>
+
+                <label for="tel">Numéro de téléphone</label>
+
+                <input type="number" name="" id="tel" placeholder="Mobile number">
+
+            </p>
+
+            <p>
+
+                <label for="sujet">Sujet</label>
+
+                <input type="text" name="sujet" id="sujet">
+
+            </p>
+
+            <p>
+
+                <textarea name="" id="message" cols="30" rows="10">Type here</textarea>
+
+                
+
+            </p>
+
+            <p>
+
+                <input type="submit" id='submit 'value="Envoyer mon message">
+
+            </p>           
+
+
+
+        </fieldset>
+
+    </form>
+
+
+
+    <script src="Jquery/jquery-3.3.1.min.js"></script>
+
+    <script>
+
+        $(function () {
+
+            console.log('hello');
+
+
+
+
+
+            $('#monForm').on('submit', function(ev){
+
+
+
+                ev.preventDefault();
+
+                // $('<p>').append('bonjour ' + $('#nomComplet').val()).appendTo('body');
+
+                // $('<p>').append('nous vous contacterons dans un délais de 72h à cette email:  ' + $('#email').val()).appendTo('body');
+
+                // $('<p>').append('Ainsi que par sms à ce numéro de téléphone: ' + $('#tel').val()).appendTo('body');
+
+                // $('<p>').append('Au sujet de: ' + $('#sujet').val()).appendTo('body');
+
+                // $('<p>').append('Récapitulatif de votre demande: ' + $('#message').val()).appendTo('body');
+
+                
+
+            var nomComplet = $('#nomComplet').val();
+
+            var email = $('#email').val();
+
+            var tel = $('#tel').val();
+
+            var sujet = $('#sujet').val();
+
+            var message = $('#message').val();
+
+            $(this).replaceWith(
+
+                `
+
+                <p class='feedback'>
+
+                Bonjour <b> ${nomComplet}</b>
+
+                </p>    
+
+                <em class='email'>
+
+                Nous vous contacterons dans un délais de 72h à cette email: <b>${email}</b>         
+
+                </em> 
+
+                <p class='tel'>
+
+                Ainsi que par sms à ce numéro de téléphone: <b>${tel}</b>                      
+
+                </p>      
+
+                <p class='sujet'>
+
+                Au sujet de: <b>${sujet}</b>      
+
+                    
+
+                </p>      
+
+                <p class='message'>
+
+                Récapitulatif de votre demande: <b>${message}</b>                       
+
+                </p>      
+
+                `
+
+            )
+
+                
+
+            }) // fin submit
+
+         
+
+            
+
+           
+
+
+
+
+
+        })
+
+    </script>
+
+</body>
+
+</html>
+
